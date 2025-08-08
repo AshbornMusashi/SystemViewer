@@ -6,10 +6,10 @@ using namespace std;
 int main(){
     short int userOption;
     string line;
-    cout << "1.Show CPU info\n2 .Show memory info\n 3.Show OS version\n 4.Exit\n";
-    cin >> userOption;
 
    do{
+     cout << "1.Show Cpu info\n 2.Show memory info\n 3.Show Os version\n 4.Exit\n";
+     cin >> userOption;
      switch(userOption){
         case 1: {
             ifstream cpuFile("/proc/cpuinfo");
